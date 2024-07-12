@@ -128,7 +128,6 @@ scissors.addEventListener("click", function () {
       choiceC.textContent = "🖐🏼";
       break;
     case "paper":
-      // roundNumber = roundNumber + 1;
       game.setRoundNumber();
       rounds.textContent = `Rounds: ${game.getRoundNumber()}`;
       // playerScore = playerScore + 1;
