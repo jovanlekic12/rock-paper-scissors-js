@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,7 +7,36 @@
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <div class="overlay">
+        <div class="welcome">
+          <h2>Welcome!</h2>
+          <button class="start">START GAME!</button>
+        </div>
+      </div>
+      <main class="container">
+        <h1 class="title">Rock paper scissors game!</h1>
+        <h1 class="win-title">First who wins 3 rounds, wins the game!</h1>
+        <button class="btn restart">RESTART</button>
+        <div class="scores">
+          <p class="p-scores">Player one score:</p>
+          <p class="round">Rounds:</p>
+          <p class="c-score">Computer score:</p>
+        </div>
+        <section class="buttons">
+          <button data-choice="rock" class="btn rock">✊🏼</button>
+          <button data-choice="paper" class="btn paper">🖐🏼</button>
+          <button data-choice="scissors" class="btn scissors">✌🏼</button>
+        </section>
+        <aside>
+          <div class="computer">
+            <h3>Computer's choice:</h3>
+            <p class="computer-choice">?</p>
+          </div>
+        </aside>
+      </main>
+      <script src="main.js"></script>
+    </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
