@@ -54,7 +54,7 @@ const choices = ["", "rock", "paper", "scissors"];
 
 rock.addEventListener("click", function () {
   game.setPlayerChoice("rock");
-  game.setComputerChoice(choices[numberGenerator(1, 4)])
+  game.setComputerChoice(choices[numberGenerator(1, 4)]);
   switch (game.getComputerChoice()) {
     case "rock":
       game.setRoundNumber();
@@ -85,7 +85,7 @@ rock.addEventListener("click", function () {
 
 paper.addEventListener("click", function () {
   game.setPlayerChoice("rock");
-  game.setComputerChoice(choices[numberGenerator(1, 4)])
+  game.setComputerChoice(choices[numberGenerator(1, 4)]);
   switch (game.getComputerChoice()) {
     case "rock":
       // roundNumber = roundNumber + 1;
@@ -116,7 +116,7 @@ paper.addEventListener("click", function () {
 
 scissors.addEventListener("click", function () {
   game.setPlayerChoice("rock");
-  game.setComputerChoice(choices[numberGenerator(1, 4)])
+  game.setComputerChoice(choices[numberGenerator(1, 4)]);
   switch (game.getComputerChoice()) {
     case "rock":
       // computerScore = computerScore + 1;
@@ -174,25 +174,32 @@ function enableButtons() {
   scissors.disabled = false;
 }
 
-function playGame() {
-  game.getRandomNumber() = numberGenerator(0, 3);
-  computerChoice = choices[randomNumber];
-}
-
 function winner() {
-  if (game.getRoundNumber() === 3 && game.getComputerScore() > game.getPlayerScore()) {
+  if (
+    game.getRoundNumber() === 3 &&
+    game.getComputerScore() > game.getPlayerScore()
+  ) {
     whoWin.textContent = "YOU LOSE!";
     restartBtn.style.display = "flex";
     disableButtons();
-  } else if (game.getRoundNumber() === 3 && game.getPlayerScore() > game.getComputerScore()) {
+  } else if (
+    game.getRoundNumber() === 3 &&
+    game.getPlayerScore() > game.getComputerScore()
+  ) {
     whoWin.textContent = "YOU WON!";
     restartBtn.style.display = "flex";
     disableButtons();
-  } else if (game.getRoundNumber() > 3 && game.getComputerScore() > game.getPlayerScore()) {
+  } else if (
+    game.getRoundNumber() > 3 &&
+    game.getComputerScore() > game.getPlayerScore()
+  ) {
     whoWin.textContent = "YOU LOSE!";
     restartBtn.style.display = "flex";
     disableButtons();
-  } else if (game.getRoundNumber() > 3 && game.getPlayerScore() > game.getComputerScore()) {
+  } else if (
+    game.getRoundNumber() > 3 &&
+    game.getPlayerScore() > game.getComputerScore()
+  ) {
     whoWin.textContent = "YOU WON!";
     restartBtn.style.display = "flex";
     disableButtons();
