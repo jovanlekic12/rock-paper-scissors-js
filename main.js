@@ -84,7 +84,7 @@ rock.addEventListener("click", function () {
 });
 
 paper.addEventListener("click", function () {
-  game.setPlayerChoice("rock");
+  game.setPlayerChoice("paper");
   game.setComputerChoice(choices[numberGenerator(1, 4)]);
   switch (game.getComputerChoice()) {
     case "rock":
@@ -115,7 +115,7 @@ paper.addEventListener("click", function () {
 });
 
 scissors.addEventListener("click", function () {
-  game.setPlayerChoice("rock");
+  game.setPlayerChoice("scissors");
   game.setComputerChoice(choices[numberGenerator(1, 4)]);
   switch (game.getComputerChoice()) {
     case "rock":
